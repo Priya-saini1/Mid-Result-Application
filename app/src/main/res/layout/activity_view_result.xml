@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginpic"
+    tools:context=".ViewResult">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:fontFamily="casual"
+        android:text="Mid Term Result"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+
+            <TextView
+                android:id="@+id/stddetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Result"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:fontFamily="casual"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:backgroundTint="@color/purple"
+                        android:text="Result"
+                        android:textSize="18sp"
+                        app:cornerRadius="190dp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+</LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Enrollment"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Name"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Subject"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Marks"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/rollno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment"
+                android:padding="13dp"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="13dp"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/subdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:visibility="gone"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/marksdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marks"
+                android:visibility="gone"
+                android:padding="13dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pass"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+    </TableLayout>
+
+
+</LinearLayout>
